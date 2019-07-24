@@ -6,7 +6,7 @@ class Application
 
     if req.path.match(/item/)
       item_name = req.path.split("/item/").last
-      item =
+      #item =
       resp.write "#{item_name} costs #{item.price}"
     else
       resp.write "Route not found"
