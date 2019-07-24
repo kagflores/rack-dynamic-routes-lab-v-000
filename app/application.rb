@@ -8,6 +8,7 @@ class Application
 
     if req.path.match(/item/)
       item_name = req.path.split("/item/").last
+      binding.pry
       item = @@items.find{|i| i.name == item_name}
       if item == nil
         resp.write "Item not found"
