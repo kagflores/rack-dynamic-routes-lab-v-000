@@ -13,7 +13,7 @@ class Application
         resp.write "Item not found"
         resp.status = 400
       else
-        resp.write "#{item.name} costs #{item.price}"
+        resp.write "#{item.name} is #{item.price}"
         resp.status = 200
       end
     else
